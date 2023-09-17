@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Ruwudu&family=Ubuntu:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* font-family: "Montserrat", sans-serif; */
+  /* font-family: "Ruwudu", serif; */
+  font-family: "Ubuntu", sans-serif;
+  cursor: pointer;
+}
+
+.id {
+  color: white;
+}
+
+.main {
+  background-color: white;
+  width: 100%;
+  height: 700px;
+  margin: 150px auto;
+  display: flex;
+}
+.left {
+  height: 100%;
+  width: 25%;
+}
+.middle {
+  height: 100%;
+  width: 50%;
+}
+.right {
+  height: 100%;
+  width: 25%;
+}
+
+.calender,
+.activities,
+.todays-activities {
+  width: 90%;
+  height: 80%;
+  margin: 100px auto;
+  border-radius: 25px;
+  display: flex;
+}
+
+.day {
+  height: 100%;
+  width: 45%;
+  border-radius: 25px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  text-align: center;
+  padding-top: 100px;
+  color: white;
+  background-color: #20bf55;
+  background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+}
+.day > p {
+  font-size: 5em;
+}
+.event {
+  font-size: 25px !important;
+  color: black;
+  margin-top: 70px;
+}
+
+.full-display {
+  width: 55%;
+  border-radius: 25px;
+  height: 100%;
+  border-bottom: 1px solid lightblue;
+  border-right: 1px solid lightblue;
+  border-bottom-left-radius: 0;
+}
+
+.navigator {
+  background-color: #96d1e1;
+  height: 30%;
+  border-top-right-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.calender_display {
+  height: 70%;
+  width: 100%;
+}
+/* .calender_display > table {
+  width: 100%;
+  height: 100%;
+} */
+/* 
+table > tbody {
+  text-align: center;
+} */
+.show-dates {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, 40px);
+  grid-gap: 2px;
+}
+.show-dates span {
+  padding-top: 15px;
+}
+.show-dates > p {
+  border: 1px solid green;
+}
+.show-dates p,
+span {
+  display: block;
+}
+
+.show-dates > p:hover {
+  background-color: lightgreen;
+  color: white;
+}
+
+.currentDay {
+  color: white;
+  background-color: aqua;
+}
+
+.selected {
+  color: white;
+  background-color: lightcoral;
+}
+.label_month_year {
+  color: white;
+  font-size: 1.2em;
+}
+
+.hidden {
+  display: none;
+}
+
+.prompt_take_input {
+  height: 200px;
+  width: 500px;
+  margin: 0 auto;
+  border-radius: 25px;
+  z-index: 1;
+  border: 1px solid black;
+  position: absolute;
+  top: 500px;
+  left: 700px;
+  background-color: white;
+}
+.top-box {
+  height: 20%;
+  width: 100%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.prompt_take_input > .top-box {
+  background-color: #20bf55;
+}
+.prompt_take_input > .title {
+  height: 20%;
+}
+.title,
+.description {
+  background-color: transparent;
+  width: 100%;
+  margin-bottom: 0;
+}
+.title > input,
+.description > input {
+  width: 100%;
+  height: 40%;
+  padding: 20px;
+  text-align: center;
+}
+.prompt_take_input > .description {
+  height: 20%;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-evenly;
+  height: 29%;
+  margin-top: 9px;
+}
+.accept,
+.cancel {
+  padding: 20px;
+  color: White;
+  background-color: rgb(108, 108, 229);
+  border-radius: 10px;
+}
+.cancel {
+  background-color: rgb(240, 125, 125);
+  color: white;
+}
+
+.title > input:focus,
+.description > input:focus {
+  outline: none;
+}
+.activities {
+  display: flex;
+  flex-direction: column;
+}
+.acti-heading,
+.today-heading {
+  background-color: #eec0c6;
+  background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+  height: 30%;
+  width: 100%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  color: White;
+  font-size: 3em;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.activity {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+  height: auto;
+  border-bottom: 1px solid black;
+  width: 100%;
+  padding: 5px;
+  margin: 0 auto;
+}
+.display-activities {
+  height: 100%;
+  max-height: 100%;
+  overflow-y: scroll;
+}
+
+.delete {
+  background-color: red;
+  padding: 10px;
+  border-radius: 15px;
+  color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+  .main {
+    flex-direction: column;
+  }
+}
+
+.left-arrow,
+.right-arrow,
+.label_month_year {
+  font-size: 2em;
+  color: white;
+}

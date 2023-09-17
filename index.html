@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LocalStorage</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="left">
+        <div class="activities">
+          <div class="today-heading">Todays Event</div>
+          <div data-id="todays-activities" class="display-activities">
+            <div class="activity">
+              <span>Date</span>
+              <span>Title</span>
+              <span>Description</span>
+            </div>
+            <div class="activity">
+              <span>Date</span>
+              <span>Title</span>
+              <span>Description</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="middle">
+        <div class="calender">
+          <div data-id="current-day" class="day">
+            <p>16</p>
+            <p>Aug</p>
+
+            <!-- <div data-id="add-event" class="event">Create Event +</div> -->
+          </div>
+          <div class="full-display">
+            <div class="navigator">
+              <div data-id="left-arrow" class="left-arrow">&leftarrow;</div>
+              <div style="visibility: hidden" class="dropdown">DropDown</div>
+              <div data-id="right-arrow" class="right-arrow">&rightarrow;</div>
+              <div data-id="label_month_year" class="label_month_year">
+                Aug,2023
+              </div>
+            </div>
+
+            <div data-id="calender_display" class="calender_display">
+              <div data-id="show-dates" class="show-dates"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="activities">
+          <div class="acti-heading">TO-DO</div>
+          <div data-id="display-activities" class="display-activities">
+            <div class="activity">
+              <span>Date</span>
+              <span>Title</span>
+              <span>Description</span>
+            </div>
+            <div class="activity">
+              <span>Date</span>
+              <span>Title</span>
+              <span>Description</span>
+            </div>
+            <div class="activity">
+              <span>Date</span>
+              <span>Title</span>
+              <span>Description</span>
+            </div>
+            <div class="activity">
+              <span>Date</span>
+              <span>Title</span>
+              <span>Description</span>
+            </div>
+            <div class="activity">
+              <span>Date</span>
+              <span>Title</span>
+              <span>Description</span>
+            </div>
+            <div class="activity">
+              <span>Date</span>
+              <span>Title</span>
+              <span>Description</span>
+            </div>
+            <div class="activity">
+              <span>Date</span>
+              <span>Title</span>
+              <span>Description</span>
+            </div>
+            <div class="activity">
+              <span>Date</span>
+              <span>Title</span>
+              <span>Description</span>
+            </div>
+            <div class="activity">
+              <span>Date</span>
+              <span>Title</span>
+              <span>Description</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div data-id="prompt_take_input" class="prompt_take_input hidden">
+      <div class="top-box"></div>
+      <div class="title">
+        <input data-id="title" type="text" placeholder="Enter A Title" />
+      </div>
+      <div class="description">
+        <input
+          data-id="description"
+          type="text"
+          placeholder="Enter A Description"
+        />
+      </div>
+      <div class="btns">
+        <div data-id="accept" class="accept">OK</div>
+        <div data-id="cancel" class="cancel">CANCEL</div>
+      </div>
+    </div>
+
+    <script src="script/script.js"></script>
+  </body>
+</html>
